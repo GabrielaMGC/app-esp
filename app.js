@@ -11,7 +11,7 @@ const port = process.env.PORT || 3000;
 app.use(bodyParser.json());
 
 // Conectando ao banco de dados MongoDB
-mongoose.connect('mongodb+srv://kaueteixeirap:sdyHsa8Cm6v6cYBc@agoravaimesmodb.5mkrmuf.mongodb.net/?retryWrites=true&w=majority&appName=AgoraVaiMesmoDB', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://gabi:omHyRF6nXnuhRs2h@cluster-app-esp.i6ec5b1.mongodb.net/?retryWrites=true&w=majority&appName=cluster-app-esp', { useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'Erro de conexão com o MongoDB:'));
 db.once('open', function() {
